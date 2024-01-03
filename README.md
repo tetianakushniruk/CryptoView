@@ -1,4 +1,4 @@
-# CryptoMania
+# CryptoView
  A cryptocurrency data aggregator that tracks price, volume, social stats.
 
 [![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](https://android.com)
@@ -18,7 +18,7 @@ Design & implement an Android application based on [CoinGeckoAPI](https://coinge
 
 ## Visual
 
-<img src="https://github.com/gabriel-TheCode/AndroidLibrariesAssets/raw/master/CryptoMania/cryptomania.png"/>
+<img src="https://github.com/gabriel-TheCode/AndroidLibrariesAssets/raw/master/CryptoView/cryptoview.png"/>
 
 <a name="specifications"></a>
 
@@ -34,40 +34,11 @@ Design & implement an Android application based on [CoinGeckoAPI](https://coinge
 - [x] Kotlin Coroutines
 - [x] MVVM/Clean Architecture
 
-<a name="tools"></a>
-
-## Languages, libraries and tools used
-
-- [Kotlin](https://kotlinlang.org/)
-- [AndroidX libraries](https://developer.android.com/jetpack/androidx)
-- [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) : [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle), [LiveData](https://developer.android.com/topic/libraries/architecture/livedata), [Room](https://developer.android.com/jetpack/androidx/releases/room), [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
-- [DataStore](https://developer.android.com/topic/libraries/architecture/datastore)
-- [Kotlin Flows](https://developer.android.com/kotlin/flow)
-- [View Binding](https://developer.android.com/topic/libraries/view-binding)
-- [Dagger-Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
-- [ViewPager2](https://developer.android.com/jetpack/androidx/releases/viewpager2)
-- [Glide](https://github.com/bumptech/glide)
-- [Retrofit2](https://github.com/square/retrofit)
-- [Lottie](https://github.com/airbnb/lottie-android)
-- [Aesthetic Dialogs](https://github.com/gabriel-TheCode/AestheticDialogs)
-- [RecyclerView Animators](https://github.com/wasabeef/recyclerview-animators)
-- [AnyChart](https://github.com/AnyChart/AnyChart-Android)
-
-
-<a name="requirements"></a>
-
 ## Requirements
 
 - min SDK 21
 
 <a name="installation"></a>
-
-## Installation
-
-- Just clone the app and import to Android Studio.
-  `git clone https://github.com/gabriel-TheCode/CryptoMania.git`
-
-<a name="contribute"></a>
 
 ## Contribute
 
@@ -81,7 +52,7 @@ See [Contributing Guidelines](CONTRIBUTING.md).
 MIT License
 
 ```
-Copyright (c) [2021] [TEKOMBO Gabriel]
+Copyright (c) [2021]
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

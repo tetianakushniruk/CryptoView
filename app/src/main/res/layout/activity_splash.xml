@@ -41,7 +41,7 @@
                 android:id="@+id/text_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/crypto_mania"
+                android:text="@string/crypto_view"
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:fontFamily="@font/baloo_medium"

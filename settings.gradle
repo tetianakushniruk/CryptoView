@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "CryptoMania"
+rootProject.name = "CryptoView"
