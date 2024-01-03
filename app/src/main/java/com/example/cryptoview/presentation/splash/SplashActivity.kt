@@ -40,9 +40,6 @@ class SplashActivity : AppCompatActivity() {
         logo = binding.imageLogo
         layoutImage = binding.layoutImageContent
         layouTitle = binding.layoutText
-        upToDown = AnimationUtils.loadAnimation(this, R.anim.up_to_down)
-
-        layoutImage.animation = upToDown
 
         val rotate = RotateAnimation(
             0f,
