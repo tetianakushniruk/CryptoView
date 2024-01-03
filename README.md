@@ -12,12 +12,11 @@ Design & implement an Android application based on [CoinGeckoAPI](https://coinge
 
 ## Specifications
 
-- [x] Splashcreen with custom animation
-- [x] Retrieve crypto currencies data, exchanges, Market cap &amp; rank, prices, and exchange volumes from [CoinGecko API](https://coingecko.com/en/api).
-- [x] Market chart
-- [x] Clean design
-- [x] Intro Slider
-- [x] Monitor connectivity status
+- Retrieve crypto currencies data, exchanges, Market cap &amp; rank, prices, and exchange volumes from [CoinGecko API](https://coingecko.com/en/api).
+- Market chart
+- Clean design
+- Splash screen with animations
+- Monitor connectivity status
 
 ## Requirements
 
