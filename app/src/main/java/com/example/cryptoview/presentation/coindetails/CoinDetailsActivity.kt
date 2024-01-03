@@ -200,6 +200,7 @@ class CoinDetailsActivity : AppCompatActivity() {
         cartesian.xAxis(0).labels().padding(5.0, 5.0, 5.0, 5.0)
         val series: Line = cartesian.line(seriesData)
         series.name(coin?.name)
+        series.stroke("green")
         series.hovered().markers().enabled(true)
         series.hovered().markers()
             .type(MarkerType.CIRCLE)
