@@ -11,7 +11,7 @@ android {
     buildToolsVersion '34.0.0'
 
     defaultConfig {
-        applicationId "com.thecode.cryptoview"
+        applicationId "com.example.cryptoview"
         minSdkVersion 21
         //noinspection EditedTargetSdkVersion
         targetSdkVersion 34
@@ -45,7 +45,7 @@ android {
     kotlinOptions {
         jvmTarget = '11'
     }
-    namespace 'com.thecode.cryptoview'
+    namespace 'com.example.cryptoview'
 }
 
 dependencies {

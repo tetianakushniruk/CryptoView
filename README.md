@@ -2,7 +2,7 @@
  A cryptocurrency data aggregator that tracks price, volume, social stats.
 
 [![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](https://android.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://gabrielthecode.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://gabrielexample.com)
 
 
 <a name="description"></a>
@@ -18,7 +18,7 @@ Design & implement an Android application based on [CoinGeckoAPI](https://coinge
 
 ## Visual
 
-<img src="https://github.com/gabriel-TheCode/AndroidLibrariesAssets/raw/master/CryptoView/cryptoview.png"/>
+<img src="https://github.com/gabriel-example/AndroidLibrariesAssets/raw/master/CryptoView/cryptoview.png"/>
 
 <a name="specifications"></a>
 
