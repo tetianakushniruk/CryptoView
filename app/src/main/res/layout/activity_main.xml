@@ -1,33 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.main.MainActivity"
+    android:background="@color/white">
 
-    <com.google.android.material.appbar.AppBarLayout
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="60dp"/>
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bottomNavigationBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
+        android:background="#F5F7FB"
+        android:elevation="8dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/home"
+            app:bt_title="@string/home"
+            app:bt_titleSize="10sp"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="?colorPrimary"
+            app:bt_colorInactive="@color/md_grey_400"
+            app:bt_icon="@drawable/ic_baseline_home_gray_24"
+            app:bt_shape="@drawable/rounded_rect_bg_nav"/>
 
-    </com.google.android.material.appbar.AppBarLayout>
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/search"
+            app:bt_title="@string/markets"
+            app:bt_titleSize="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="?colorPrimary"
+            app:bt_colorInactive="@color/md_grey_400"
+            app:bt_icon="@drawable/ic_baseline_bar_chart_gray_24"
+            app:bt_shape="@drawable/rounded_rect_bg_nav"/>
 
-    <include layout="@layout/content_main" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/bookmark"
+            app:bt_title="@string/wallet"
+            app:bt_titleSize="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="?colorPrimary"
+            app:bt_colorInactive="@color/md_grey_400"
+            app:bt_icon="@drawable/ic_baseline_account_balance_wallet_gray_24"
+            app:bt_shape="@drawable/rounded_rect_bg_nav"/>
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
