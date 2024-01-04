@@ -30,7 +30,7 @@
         android:maxLines="1"
         android:fontFamily="@font/ubuntu_medium"
         android:textSize="16sp"
-        android:textColor="@color/dark_blue"
+        android:textColor="@color/dark_grey"
         android:layout_toEndOf="@id/img_icon"
         android:layout_toStartOf="@id/text_price"/>
 

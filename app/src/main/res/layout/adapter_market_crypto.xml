@@ -30,7 +30,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/ubuntu_medium"
         android:textSize="16sp"
-        android:textColor="@color/dark_blue"
+        android:textColor="@color/dark_grey"
         android:layout_toEndOf="@id/img_icon"
         android:layout_toStartOf="@id/text_price"/>
 
@@ -85,7 +85,7 @@
         android:text="3948349,3434,343"
         android:textSize="14sp"
         android:layout_marginEnd="10dp"
-        android:textColor="@color/dark_blue"
+        android:textColor="@color/dark_grey"
         android:layout_below="@id/text_title_cap"
         android:layout_alignParentEnd="true"
         android:layout_centerInParent="true"/>

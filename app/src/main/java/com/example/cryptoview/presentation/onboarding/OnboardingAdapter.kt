@@ -37,7 +37,6 @@ class OnBoardingAdapter : RecyclerView.Adapter<OnBoardingAdapter.BaseViewHolder<
     inner class OnBoardingPagerViewHolder(itemView: View) :
         BaseViewHolder<OnBoardingPart>(itemView) {
         override fun bind(item: OnBoardingPart) {
-            binding.imageOnboarding.setAnimation(item.image)
             binding.textOnboardingTitle.setText(item.title)
             binding.textOnboardingDescription.setText(item.description)
         }

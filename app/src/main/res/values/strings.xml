@@ -3,14 +3,14 @@
     <string name="next">next</string>
     <string name="skip">skip</string>
 
-    <string name="title_onboarding_1">Hey! Let\'s enter in CryptoView</string>
-    <string name="description_onboarding_1">A cryptocurrency industry utility that aggregates and reports recently-traded prices for hundreds of cryptocurrencies traded on hundreds of platforms around the world</string>
-    <string name="title_onboarding_2">Fast, simple and intuitive</string>
-    <string name="description_onboarding_2">Make detailed comparisons and stay updated with latest crypto news relevant to your digital asset portfolio.</string>
-    <string name="title_onboarding_3">Better than a broker</string>
-    <string name="description_onboarding_3">Market cap &amp; rank, prices, exchange volumes, and currency conversion! Track your holdings with our new portfolio</string>
+    <string name="title_onboarding_1">Hello! Let\'s step into the world of CryptoView</string>
+    <string name="description_onboarding_1">A utility in the cryptocurrency industry that compiles and presents recent trading prices for hundreds of cryptocurrencies across various platforms globally.</string>
+    <string name="title_onboarding_2">Swift, uncomplicated, and user-friendly</string>
+    <string name="description_onboarding_2">Conduct thorough comparisons and stay informed about the latest cryptocurrency news relevant to your digital asset portfolio with ease.</string>
+    <string name="title_onboarding_3">Surpassing traditional brokers</string>
+    <string name="description_onboarding_3">Explore market cap, rankings, prices, exchange volumes, and currency conversion! Keep track of your holdings using our innovative portfolio management feature.</string>
     <string name="title_onboarding_finish">Welcome to CryptoView!</string>
-    <string name="description_onboarding_finish">The world’s #1 most-trusted cryptocurrency data authority.</string>
+    <string name="description_onboarding_finish">Your go-to source for the most reliable cryptocurrency data worldwide.</string>
     <string name="finish">finish</string>
     <string name="home">Home</string>
     <string name="markets">Markets</string>

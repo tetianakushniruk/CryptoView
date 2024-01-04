@@ -37,7 +37,7 @@
                 android:layout_marginStart="20dp"
                 android:fontFamily="@font/ubuntu_medium"
                 android:textSize="16sp"
-                android:textColor="@color/dark_blue"/>
+                android:textColor="@color/dark_grey"/>
 
             <TextView
                 android:id="@+id/symbolTextView"
@@ -49,7 +49,7 @@
                 android:layout_marginStart="20dp"
                 android:fontFamily="@font/ubuntu_regular"
                 android:textSize="16sp"
-                android:textColor="@color/dark_blue"/>
+                android:textColor="@color/dark_grey"/>
 
             <TextView
                 android:id="@+id/marketCapTextView"
@@ -68,7 +68,7 @@
                 android:gravity="center"
                 android:layout_marginStart="20dp"
                 android:textSize="16sp"
-                android:textColor="@color/dark_blue"/>
+                android:textColor="@color/dark_grey"/>
 
         </LinearLayout>
 
@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/n_a"
-            android:textColor="@color/dark_blue"
+            android:textColor="@color/dark_grey"
             android:textSize="26sp"
             android:fontFamily="@font/ubuntu_bold"
             android:layout_margin="30dp"
@@ -118,7 +118,7 @@
             android:layout_marginStart="30dp"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="@color/dark_blue"
+            android:textColor="@color/dark_grey"
             app:layout_constraintTop_toBottomOf="@id/coinIconImageView"
             app:layout_constraintStart_toStartOf="parent"/>
 
@@ -206,7 +206,7 @@
             android:layout_marginStart="30dp"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="@color/dark_blue"
+            android:textColor="@color/dark_grey"
             app:layout_constraintTop_toBottomOf="@id/layout_chart"
             app:layout_constraintStart_toStartOf="parent"/>
 
@@ -253,7 +253,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/ubuntu_medium"
                         android:textSize="18sp"
-                        android:textColor="@color/dark_blue"/>
+                        android:textColor="@color/dark_grey"/>
                 </LinearLayout>
 
 
@@ -294,7 +294,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/ubuntu_medium"
                         android:textSize="18sp"
-                        android:textColor="@color/dark_blue"/>
+                        android:textColor="@color/dark_grey"/>
 
                 </LinearLayout>
 
@@ -335,7 +335,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/ubuntu_medium"
                         android:textSize="18sp"
-                        android:textColor="@color/dark_blue"/>
+                        android:textColor="@color/dark_grey"/>
 
                 </LinearLayout>
 
@@ -376,7 +376,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/ubuntu_medium"
                         android:textSize="18sp"
-                        android:textColor="@color/dark_blue"/>
+                        android:textColor="@color/dark_grey"/>
                 </LinearLayout>
 
 
@@ -416,7 +416,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/ubuntu_medium"
                         android:textSize="18sp"
-                        android:textColor="@color/dark_blue"/>
+                        android:textColor="@color/dark_grey"/>
 
                 </LinearLayout>
 
@@ -458,7 +458,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/ubuntu_medium"
                         android:textSize="18sp"
-                        android:textColor="@color/dark_blue"/>
+                        android:textColor="@color/dark_grey"/>
                 </LinearLayout>
 
 
