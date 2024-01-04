@@ -28,7 +28,7 @@
                 android:layout_height="30dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/circle_image_background"
-                android:src="@mipmap/ic_launcher_foreground" />
+                android:src="@mipmap/ic_launcher_adaptive_fore" />
 
             <TextView
                 android:id="@+id/text_name_coin"
