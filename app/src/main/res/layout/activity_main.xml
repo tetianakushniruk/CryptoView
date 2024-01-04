@@ -53,19 +53,6 @@
             app:bt_colorInactive="@color/md_grey_400"
             app:bt_icon="@drawable/ic_baseline_bar_chart_gray_24"
             app:bt_shape="@drawable/rounded_rect_bg_nav"/>
-
-
-        <com.gauravk.bubblenavigation.BubbleToggleView
-            android:id="@+id/bookmark"
-            app:bt_title="@string/wallet"
-            app:bt_titleSize="10sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:bt_colorActive="?colorPrimary"
-            app:bt_colorInactive="@color/md_grey_400"
-            app:bt_icon="@drawable/ic_baseline_account_balance_wallet_gray_24"
-            app:bt_shape="@drawable/rounded_rect_bg_nav"/>
     </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

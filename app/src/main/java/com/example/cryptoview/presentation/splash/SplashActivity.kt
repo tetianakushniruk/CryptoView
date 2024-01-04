@@ -58,7 +58,7 @@ class SplashActivity : AppCompatActivity() {
 
         activityScope.launch {
             delay(4500)
-            val intent: Intent = if (viewModel.isOnboardingCompleted()) {
+            val intent: Intent = if (!viewModel.isOnboardingCompleted()) {
                 Intent(applicationContext, OnboardingActivity::class.java)
             } else {
                 Intent(applicationContext, MainActivity::class.java)
