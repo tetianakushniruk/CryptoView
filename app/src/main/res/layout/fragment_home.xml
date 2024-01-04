@@ -8,7 +8,7 @@
     <FrameLayout
         android:id="@+id/frame_header"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="160dp"
         android:background="@drawable/header_background">
 
         <LinearLayout
@@ -95,7 +95,7 @@
                 android:layout_height="40dp"
                 android:text="@string/hot"
                 app:toggle_backgroundColor="@color/primaryCardBackgroundColor"
-                app:toggle_selectedBackgroundColor="#5e6fed"
+                app:toggle_selectedBackgroundColor="@color/md_red_600"
                 app:toggle_iconGravity="center"
                 app:toggle_iconPadding="25dp"/>
 
@@ -105,7 +105,7 @@
                 android:layout_height="40dp"
                 android:text="@string/winners"
                 app:toggle_backgroundColor="@color/primaryCardBackgroundColor"
-                app:toggle_selectedBackgroundColor="#5e6fed"
+                app:toggle_selectedBackgroundColor="@color/md_red_600"
                 app:toggle_iconGravity="center"
                 app:toggle_iconPadding="25dp"/>
 
@@ -115,7 +115,7 @@
                 android:layout_height="40dp"
                 android:text="@string/losers"
                 app:toggle_backgroundColor="@color/primaryCardBackgroundColor"
-                app:toggle_selectedBackgroundColor="#5e6fed"
+                app:toggle_selectedBackgroundColor="@color/md_red_600"
                 app:toggle_iconGravity="center"
                 app:toggle_iconPadding="25dp"/>
 
