@@ -40,7 +40,7 @@
                 android:maxLines="1"
                 android:textColor="@color/dark_grey"
                 android:text="BITCOIN"
-                android:fontFamily="@font/ubuntu_regular"/>
+                android:fontFamily="@font/montserrat_medium"/>
 
         </RelativeLayout>
 
@@ -57,7 +57,7 @@
             android:textStyle="bold"
             android:textColor="@color/dark_grey"
             android:text="$ 37.800"
-            android:fontFamily="@font/ubuntu_regular"/>
+            android:fontFamily="@font/montserrat_medium"/>
 
         <TextView
             android:id="@+id/text_percentage"
@@ -70,7 +70,7 @@
             android:maxLines="1"
             android:textColor="@color/md_green_400"
             android:text="+4,5%"
-            android:fontFamily="@font/ubuntu_regular"/>
+            android:fontFamily="@font/montserrat_medium"/>
 
 
     </RelativeLayout>

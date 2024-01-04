@@ -44,7 +44,7 @@
                 android:text="@string/crypto_view"
                 android:layout_gravity="center"
                 android:textAlignment="center"
-                android:fontFamily="@font/baloo_medium"
+                android:fontFamily="@font/montserrat_extrabold"
                 android:textColor="@color/white"
                 android:textSize="25sp"/>
 

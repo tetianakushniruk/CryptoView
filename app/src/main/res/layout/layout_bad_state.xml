@@ -23,7 +23,7 @@
         android:textSize="16sp"
         android:gravity="center"
         android:layout_margin="20dp"
-        android:fontFamily="@font/ubuntu_medium"/>
+        android:fontFamily="@font/montserrat_bold"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_retry"
@@ -33,6 +33,6 @@
         android:text="@string/retry"
         android:textColor="?colorPrimary"
         android:background="@drawable/rounded_outline"
-        android:fontFamily="@font/ubuntu_medium"/>
+        android:fontFamily="@font/montserrat_bold"/>
 
 </LinearLayout>

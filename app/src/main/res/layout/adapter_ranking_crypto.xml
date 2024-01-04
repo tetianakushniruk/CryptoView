@@ -28,7 +28,7 @@
         android:ellipsize="end"
         android:text="BITCOIN"
         android:maxLines="1"
-        android:fontFamily="@font/ubuntu_medium"
+        android:fontFamily="@font/montserrat_bold"
         android:textSize="16sp"
         android:textColor="@color/dark_grey"
         android:layout_toEndOf="@id/img_icon"
