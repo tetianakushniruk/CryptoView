@@ -3,9 +3,9 @@ package com.example.cryptoview.core.di
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.example.cryptoview.BuildConfig
-import com.example.cryptoview.core.remote.AppRemoteDataSourceImpl
-import com.example.cryptoview.datasource.CoinGeckoApiRemoteService
-import com.example.cryptoview.datasource.CoinGeckoApiRemoteServiceImpl
+import com.example.cryptoview.core.remote.DefaultRemoteDataSource
+import com.example.cryptoview.datasource.services.CoinGeckoService
+import com.example.cryptoview.datasource.services.DefaultCoinGeckoService
 import com.example.cryptoview.datasource.network.api.CoinGeckoApi
 import com.example.cryptoview.datasource.network.mapper.CoinMapper
 import com.example.cryptoview.datasource.network.mapper.ExchangeMapper
@@ -54,19 +54,19 @@ object NetworkModule {
     @Provides
     fun provideInfotifyRemoteService(
         api: CoinGeckoApi
-    ): CoinGeckoApiRemoteService {
-        return CoinGeckoApiRemoteServiceImpl(api)
+    ): CoinGeckoService {
+        return DefaultCoinGeckoService(api)
     }
 
     @Singleton
     @Provides
     fun provideRemoteDataSource(
-        coinGeckoRemoteService: CoinGeckoApiRemoteService,
+        coinGeckoRemoteService: CoinGeckoService,
         coinMapper: CoinMapper,
         exchangeMapper: ExchangeMapper,
         marketChartMapper: MarketChartMapper
-    ): AppRemoteDataSourceImpl {
-        return AppRemoteDataSourceImpl(
+    ): DefaultRemoteDataSource {
+        return DefaultRemoteDataSource(
             coinGeckoRemoteService,
             coinMapper,
             exchangeMapper,

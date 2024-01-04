@@ -2,12 +2,12 @@ package com.example.cryptoview.core.repositories
 
 import com.example.cryptoview.R
 import com.example.cryptoview.core.domain.OnBoardingPart
-import com.example.cryptoview.core.local.AppLocalDataSourceImpl
+import com.example.cryptoview.core.local.DefaultLocalDataSource
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
 class OnBoardingRepository @Inject constructor(
-    private val localDataSource: AppLocalDataSourceImpl
+    private val localDataSource: DefaultLocalDataSource
 ) {
 
     suspend fun setOnboardingCompleted() {

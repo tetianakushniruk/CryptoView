@@ -9,10 +9,4 @@ class MarketChartMapper @Inject constructor() :
     override fun mapToDomain(entity: MarketChartObjectResponse): List<List<Number>> {
         return entity.prices
     }
-
-    override fun mapToEntity(domainModel: List<List<Number>>): MarketChartObjectResponse {
-        TODO("Not yet implemented")
-    }
-
-
 }

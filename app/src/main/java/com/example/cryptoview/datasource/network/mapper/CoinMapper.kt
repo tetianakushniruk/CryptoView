@@ -17,10 +17,6 @@ class CoinMapper @Inject constructor() :
         )
     }
 
-    override fun mapToEntity(domainModel: CoinItemDomainModel): CoinObjectResponse {
-        TODO("Not yet implemented")
-    }
-
     override fun mapToDomain(entity: CoinObjectResponse): CoinItemDomainModel {
         return CoinItemDomainModel(
             entity.id,

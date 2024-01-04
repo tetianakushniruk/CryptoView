@@ -13,28 +13,28 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(PREFERENCE_NAME)
+private val Context.prefs: DataStore<Preferences> by preferencesDataStore(PREFERENCE_NAME)
 
-class CryptoViewDataStore @Inject constructor(@ApplicationContext context: Context) {
+class CryptoViewPreferences @Inject constructor(@ApplicationContext context: Context) {
 
     companion object {
         private const val IS_ONBOARDING_COMPLETED = "IS_ONBOARDING_COMPLETED"
     }
 
-    private val dataStore = context.dataStore
+    private val prefs = context.prefs
 
     suspend fun setOnboardingCompleted() {
-        val dataStoreKey = booleanPreferencesKey(IS_ONBOARDING_COMPLETED)
-        dataStore.setValue(dataStoreKey, true)
+        val prefsKey = booleanPreferencesKey(IS_ONBOARDING_COMPLETED)
+        prefs.setValue(prefsKey, true)
     }
 
     fun isOnboardingCompleted(): Flow<Boolean> {
-        val dataStoreKey = booleanPreferencesKey(IS_ONBOARDING_COMPLETED)
-        return dataStore.getValueFlow(dataStoreKey, false)
+        val prefsKey = booleanPreferencesKey(IS_ONBOARDING_COMPLETED)
+        return prefs.getValueFlow(prefsKey, false)
     }
 
     suspend fun clearSession() {
-        dataStore.edit { preferences ->
+        prefs.edit { preferences ->
             preferences.clear()
         }
     }

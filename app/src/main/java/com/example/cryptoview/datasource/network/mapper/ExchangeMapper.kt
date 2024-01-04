@@ -34,8 +34,4 @@ class ExchangeMapper @Inject constructor() :
             entity.trade_volume_24h_btc_normalized
         )
     }
-
-    override fun mapToEntity(domainModel: ExchangeItemDomainModel): ExchangeObjectResponse {
-        TODO("Not yet implemented")
-    }
 }

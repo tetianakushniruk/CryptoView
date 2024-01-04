@@ -30,7 +30,7 @@ class SplashActivity : AppCompatActivity() {
     private lateinit var logo: ImageView
     private lateinit var layoutImage: LinearLayout
     private lateinit var layouTitle: LinearLayout
-    private lateinit var upToDown: Animation
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)

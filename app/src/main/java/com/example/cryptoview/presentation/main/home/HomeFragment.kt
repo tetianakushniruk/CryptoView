@@ -56,7 +56,7 @@ class HomeFragment : BaseFragment(), CoinCardOnClickListener {
     private fun showInternetConnectionErrorLayout() {
         binding.apply {
             if (coinCardRecyclerAdapter.itemCount > 0) {
-                showErrorDialog(
+                displayErrorDialog(
                     getString(R.string.network_error),
                     getString(R.string.check_internet)
                 )
@@ -74,7 +74,7 @@ class HomeFragment : BaseFragment(), CoinCardOnClickListener {
     private fun showBadStateLayout() {
         binding.apply {
             if (coinCardRecyclerAdapter.itemCount > 0) {
-                showErrorDialog(getString(R.string.error), getString(R.string.service_unavailable))
+                displayErrorDialog(getString(R.string.error), getString(R.string.service_unavailable))
             } else {
                 layoutContent.isVisible = false
                 included.apply {
@@ -193,6 +193,6 @@ class HomeFragment : BaseFragment(), CoinCardOnClickListener {
     }
 
     override fun openCoinDetails(coin: CoinItemUiModel) {
-        openCoinDetailsActivity(coin)
+        launchCoinDetailsActivity(coin)
     }
 }

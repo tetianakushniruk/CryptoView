@@ -1,15 +1,15 @@
-package com.example.cryptoview.datasource
+package com.example.cryptoview.datasource.services
 
 import com.example.cryptoview.datasource.network.api.CoinGeckoApi
 import com.example.cryptoview.datasource.network.model.CoinObjectResponse
 import com.example.cryptoview.datasource.network.model.ExchangeObjectResponse
 import com.example.cryptoview.datasource.network.model.MarketChartObjectResponse
 
-interface CoinGeckoApiRemoteService {
-    //region COIN
-    suspend fun getAllCoins(currency: String): List<CoinObjectResponse>
+interface CoinGeckoService {
 
     suspend fun getCoinById(id: String): CoinObjectResponse
+
+    suspend fun getAllCoins(currency: String): List<CoinObjectResponse>
 
     suspend fun getMarketChart(
         coinId: String,
@@ -17,18 +17,12 @@ interface CoinGeckoApiRemoteService {
         days: Int
     ): MarketChartObjectResponse
 
-    //endregion
-
-    //region EXCHANGE
-
     suspend fun getAllExchanges(): List<ExchangeObjectResponse>
-
-    //endregion
 }
 
-class CoinGeckoApiRemoteServiceImpl constructor(
+class DefaultCoinGeckoService constructor(
     private val coinGeckoApi: CoinGeckoApi
-) : CoinGeckoApiRemoteService {
+) : CoinGeckoService {
 
     override suspend fun getAllCoins(
         currency: String
