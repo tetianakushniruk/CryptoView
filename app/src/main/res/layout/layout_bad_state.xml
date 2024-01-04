@@ -18,12 +18,12 @@
         android:id="@+id/text_state"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/dark_blue"
+        android:textColor="@color/dark_grey"
         android:text="@string/internet_connection_error"
         android:textSize="16sp"
         android:gravity="center"
         android:layout_margin="20dp"
-        android:fontFamily="@font/ubuntu_medium"/>
+        android:fontFamily="@font/montserrat_bold"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_retry"
@@ -33,6 +33,6 @@
         android:text="@string/retry"
         android:textColor="?colorPrimary"
         android:background="@drawable/rounded_outline"
-        android:fontFamily="@font/ubuntu_medium"/>
+        android:fontFamily="@font/montserrat_bold"/>
 
 </LinearLayout>

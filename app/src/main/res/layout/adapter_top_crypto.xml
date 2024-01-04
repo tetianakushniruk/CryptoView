@@ -28,7 +28,7 @@
                 android:layout_height="30dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/circle_image_background"
-                android:src="@mipmap/ic_launcher_foreground" />
+                android:src="@mipmap/ic_launcher_adaptive_fore" />
 
             <TextView
                 android:id="@+id/text_name_coin"
@@ -38,9 +38,9 @@
                 android:layout_toEndOf="@id/icon_coin"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textColor="@color/dark_blue"
+                android:textColor="@color/dark_grey"
                 android:text="BITCOIN"
-                android:fontFamily="@font/ubuntu_regular"/>
+                android:fontFamily="@font/montserrat_medium"/>
 
         </RelativeLayout>
 
@@ -55,9 +55,9 @@
             android:textSize="26sp"
             android:maxLines="1"
             android:textStyle="bold"
-            android:textColor="@color/dark_blue"
+            android:textColor="@color/dark_grey"
             android:text="$ 37.800"
-            android:fontFamily="@font/ubuntu_regular"/>
+            android:fontFamily="@font/montserrat_medium"/>
 
         <TextView
             android:id="@+id/text_percentage"
@@ -70,7 +70,7 @@
             android:maxLines="1"
             android:textColor="@color/md_green_400"
             android:text="+4,5%"
-            android:fontFamily="@font/ubuntu_regular"/>
+            android:fontFamily="@font/montserrat_medium"/>
 
 
     </RelativeLayout>
