@@ -19,13 +19,13 @@ open class BaseFragment : Fragment() {
             .show()
     }
 
-    fun showSuccessDialog(title: String, description: String) {
-        AestheticDialog.Builder(requireActivity(), DialogStyle.RAINBOW, DialogType.SUCCESS)
-            .setTitle(title)
-            .setMessage(description)
-            .setDuration(2000)
-            .show()
-    }
+//    fun showSuccessDialog(title: String, description: String) {
+//        AestheticDialog.Builder(requireActivity(), DialogStyle.RAINBOW, DialogType.SUCCESS)
+//            .setTitle(title)
+//            .setMessage(description)
+//            .setDuration(2000)
+//            .show()
+//    }
 
     fun openCoinDetailsActivity(coin: CoinItemUiModel) {
         val intent = Intent(context, CoinDetailsActivity::class.java)
