@@ -14,27 +14,27 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class OnboardingActivity : AppCompatActivity() {
 
-    private val viewModel: OnboardingViewModel by viewModels()
-    private val onBoardingAdapter = OnBoardingAdapter()
-    private lateinit var binding: ActivityOnboardingBinding
+    private val onboardingViewModel: OnboardingViewModel by viewModels()
+    private val onboardingAdapter = OnBoardingAdapter()
+    private lateinit var onboardingBinding: ActivityOnboardingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityOnboardingBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
-        setUpViews()
-        setUpObserver()
-        viewModel.getOnBoardingSlide()
+        onboardingBinding = ActivityOnboardingBinding.inflate(layoutInflater)
+        val rootView = onboardingBinding.root
+        setContentView(rootView)
+        initializeViews()
+        observeViewModel()
+        onboardingViewModel.getOnBoardingSlide()
     }
 
-    private fun setUpViews() {
-        binding.apply {
+    private fun initializeViews() {
+        onboardingBinding.apply {
             btnNextStep.setOnClickListener {
-                if (getNextItem() > getAdapterSize()) {
+                if (getNextItemPosition() > getAdapterSize()) {
                     launchMainScreen()
                 } else {
-                    viewPager.setCurrentItem(getNextItem(), true)
+                    viewPager.setCurrentItem(getNextItemPosition(), true)
                 }
             }
 
@@ -42,18 +42,18 @@ class OnboardingActivity : AppCompatActivity() {
                 viewPager.currentItem = getAdapterSize()
             }
         }
-        setUpPager()
+        setupViewPager()
     }
 
-    private fun setUpPager() {
-        binding.apply {
+    private fun setupViewPager() {
+        onboardingBinding.apply {
             viewPager.apply {
-                adapter = onBoardingAdapter
+                adapter = onboardingAdapter
                 registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                     override fun onPageSelected(position: Int) {
                         super.onPageSelected(position)
                         btnNextStep.text =
-                            if (position == 2) getString(R.string.finish) else getString(R.string.next)
+                            if (position == LAST_PAGE_POSITION) getString(R.string.finish) else getString(R.string.next)
                     }
                 })
             }
@@ -61,28 +61,32 @@ class OnboardingActivity : AppCompatActivity() {
         }
     }
 
-    private fun setUpObserver() {
-        viewModel.state.observe(
+    private fun observeViewModel() {
+        onboardingViewModel.state.observe(
             this
         ) {
             when (it) {
-                is OnBoardingState.Complete -> onBoardingAdapter.setItem(it.list)
+                is OnBoardingState.Complete -> onboardingAdapter.setItem(it.list)
             }
         }
     }
 
     private fun launchMainScreen() {
-        viewModel.setOnboardingCompleted()
-        val intent = Intent(applicationContext, OnboardingFinishActivity::class.java)
-        startActivity(intent)
+        onboardingViewModel.setOnboardingCompleted()
+        val mainScreenIntent = Intent(applicationContext, OnboardingFinishActivity::class.java)
+        startActivity(mainScreenIntent)
         finishAffinity()
     }
 
-    private fun getNextItem(): Int {
-        return binding.viewPager.currentItem + 1
+    private fun getNextItemPosition(): Int {
+        return onboardingBinding.viewPager.currentItem + 1
     }
 
     private fun getAdapterSize(): Int {
-        return onBoardingAdapter.itemCount - 1
+        return onboardingAdapter.itemCount - 1
+    }
+
+    companion object {
+        private const val LAST_PAGE_POSITION = 2
     }
 }

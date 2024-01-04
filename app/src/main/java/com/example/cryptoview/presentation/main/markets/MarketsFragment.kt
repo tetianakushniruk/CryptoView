@@ -67,7 +67,7 @@ class MarketsFragment : BaseFragment(), CoinCardOnClickListener, ExchangeOnClick
 
     private fun showInternetConnectionErrorLayout() {
         if (marketRecyclerAdapter.itemCount > 0 || exchangeRecyclerAdapter.itemCount > 0) {
-            showErrorDialog(
+            displayErrorDialog(
                 getString(R.string.network_error),
                 getString(R.string.check_internet)
             )
@@ -82,7 +82,7 @@ class MarketsFragment : BaseFragment(), CoinCardOnClickListener, ExchangeOnClick
 
     private fun showBadStateLayout() {
         if (marketRecyclerAdapter.itemCount > 0 || exchangeRecyclerAdapter.itemCount > 0) {
-            showErrorDialog(
+            displayErrorDialog(
                 getString(R.string.error),
                 getString(R.string.service_unavailable)
             )
@@ -246,7 +246,7 @@ class MarketsFragment : BaseFragment(), CoinCardOnClickListener, ExchangeOnClick
     }
 
     override fun openCoinDetails(coin: CoinItemUiModel) {
-        openCoinDetailsActivity(coin)
+        launchCoinDetailsActivity(coin)
     }
 
     override fun openExchangeDetails(exchange: ExchangeItemDomainModel) {

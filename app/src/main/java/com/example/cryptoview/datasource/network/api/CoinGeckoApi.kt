@@ -9,16 +9,18 @@ import retrofit2.http.Query
 
 interface CoinGeckoApi {
 
-    //region Coins
+    @GET("coins/{id}")
+    suspend fun getCoinById(
+        @Path(value = "id", encoded = true) coinId: String
+    ): CoinObjectResponse
+
     @GET("coins/markets")
     suspend fun getAllCoins(
         @Query("vs_currency") currency: String
     ): List<CoinObjectResponse>
 
-    @GET("coins/{id}")
-    suspend fun getCoinById(
-        @Path(value = "id", encoded = true) coinId: String
-    ): CoinObjectResponse
+    @GET("exchanges")
+    suspend fun getAllExchanges(): List<ExchangeObjectResponse>
 
     @GET("coins/{id}/market_chart")
     suspend fun getMarketChart(
@@ -26,12 +28,4 @@ interface CoinGeckoApi {
         @Query("vs_currency") currency: String,
         @Query("days") days: Int
     ): MarketChartObjectResponse
-
-    //endregion
-
-    //region Exchange
-    @GET("exchanges")
-    suspend fun getAllExchanges(): List<ExchangeObjectResponse>
-
-    //endregion
 }

@@ -11,25 +11,17 @@ import com.example.cryptoview.presentation.main.home.CoinItemUiModel
 
 open class BaseFragment : Fragment() {
 
-    fun showErrorDialog(title: String, description: String) {
+    fun displayErrorDialog(errorTitle: String, errorDescription: String) {
         AestheticDialog.Builder(requireActivity(), DialogStyle.RAINBOW, DialogType.ERROR)
-            .setTitle(title)
-            .setMessage(description)
+            .setTitle(errorTitle)
+            .setMessage(errorDescription)
             .setDuration(2000)
             .show()
     }
 
-//    fun showSuccessDialog(title: String, description: String) {
-//        AestheticDialog.Builder(requireActivity(), DialogStyle.RAINBOW, DialogType.SUCCESS)
-//            .setTitle(title)
-//            .setMessage(description)
-//            .setDuration(2000)
-//            .show()
-//    }
-
-    fun openCoinDetailsActivity(coin: CoinItemUiModel) {
-        val intent = Intent(context, CoinDetailsActivity::class.java)
-        intent.putExtra(COIN_UI_MODEL, coin)
+    fun launchCoinDetailsActivity(coinItem: CoinItemUiModel) {
+        val intent = Intent(requireContext(), CoinDetailsActivity::class.java)
+        intent.putExtra(COIN_UI_MODEL, coinItem)
         requireActivity().startActivity(intent)
     }
 

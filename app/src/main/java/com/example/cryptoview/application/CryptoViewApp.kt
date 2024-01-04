@@ -8,14 +8,8 @@ import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
 class CryptoViewApp : Application(), LifecycleObserver {
-
-    private lateinit var mContext: Context
-
     override fun onCreate() {
         super.onCreate()
-        mContext = applicationContext
-        CryptoViewDataStore(mContext)
-
         ProcessLifecycleOwner.get().lifecycle.addObserver(this)
     }
 }
